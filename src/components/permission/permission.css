@@ -1,0 +1,57 @@
+/* styles/datepicker.css */
+
+/* Estilo para el contenedor del DatePicker */
+.custom-datepicker-container {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    border: 1px solid #ccc; /* Borde del DatePicker */
+    border-radius: 4px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 10px; /* Espaciado interno */
+    background-color: #fff; /* Color de fondo */
+}
+
+/* Estilo para el input del DatePicker */
+.custom-datepicker-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el calendario del DatePicker */
+.custom-datepicker-calendar {
+    font-family: Arial, sans-serif; /* Fuente del calendario */
+}
+
+/* Estilo para los días del calendario */
+.custom-datepicker-day {
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para los días seleccionados */
+.custom-datepicker-day--selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo para los días activos (hoy) */
+.custom-datepicker-day--today {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para los días fuera del mes */
+.custom-datepicker-day--outside-month {
+    color: #999;
+}
+
+/* Estilo para los títulos del calendario */
+.custom-datepicker-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
