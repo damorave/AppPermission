@@ -17,8 +17,6 @@ const initialPermission = {
 }
 /**
  * Queda pendiente el formulario para los permisos, se creó el esqueño con el fin de obtener la información
- * @export
- * @return {*} 
  */
 export function EditPermissionComponent() {
     const { id } = useParams<{ id: string }>();

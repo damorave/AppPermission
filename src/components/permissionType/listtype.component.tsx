@@ -1,22 +1,13 @@
-import { useEffect, useState } from "react";
-import { appsettings } from "../../settings/appsettings";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Container, Row, Col, Table, Button } from "reactstrap";
-import { IPermissionType } from "../../assets/interface/IPermissionType";
+import { GetTypePermissionService } from "../../service/getTypePermissionService";
 
 
 export function ListPermissionTypeComponent() {
-    const [permissionTypes, setPermissionTypes] = useState<IPermissionType[]>([])
-
-
-    const getPermissionType = async () => {
-        const response = await fetch(`${appsettings.apiUrl}permissionTypes/getall`);
-        if (response.ok) {
-            const data = await response.json();
-            setPermissionTypes(data);
-        }
-    }
+    
+    const { permissionTypes, getPermissionType } = GetTypePermissionService();
 
     useEffect(() => {
         getPermissionType()

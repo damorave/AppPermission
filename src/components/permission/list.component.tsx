@@ -6,7 +6,6 @@ import { Container, Row, Col, Table, Button } from "reactstrap";
 import { IPermission } from "../../assets/interface/IPermission";
 
 export function ListPermissionComponent() {
-    // const [permission, setPermission] = useState<IPermission[]>([])
     const [permission, setPermission] = useState<IPermission[]>([]);
     const [permissionTypes, setPermissionTypes] = useState<Map<string, string>>(new Map());
 
